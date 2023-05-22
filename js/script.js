@@ -115,4 +115,46 @@
 // personalMovieDB.movies[c] = d;
 
 // console.log(personalMovieDB);
-console.log();
+
+// условия
+
+// if (4 == 4) {
+// 	console.log('ok');
+// } else {
+// 	console.log('error');
+// };
+
+// const num = 50;
+
+// if (num < 49) {
+// 	console.log('error');
+// } else if (num > 100) {
+// 	console.log('Много');
+// } else {
+// 	console.log('ok');
+// }
+
+// (num === 500) ? console.log('ok') : console.log('error');
+
+// ? тернарный оператор
+
+// const num = 50;
+// switch (num) {
+// 	case 49:
+// 		console.log('неверно');
+// 		break;
+// 	case 100:
+// 		console.log('неверно');
+// 		break;
+// 	case 500:
+// 		console.log('верно');
+// 		break;
+// 	default:
+// 	case 49:
+// 		console.log('не в этот раз');
+// 		break;
+// }
+// break останавливает если верно
+
+// циклы
+
