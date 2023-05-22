@@ -1,0 +1,12 @@
+{
+  "name": "eslint-examples",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint"
+  },
+  "devDependencies": {
+    "eslint": "7.1.0"
+  }
+}
