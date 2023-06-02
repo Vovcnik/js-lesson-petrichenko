@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 //числа
 // let number = 4.6;
@@ -94,7 +94,6 @@
 	 }
 
 Проверить, чтобы все работало без ошибок в консоли */
-
 
 // const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
 
@@ -195,40 +194,102 @@
 
 4) Потренироваться и переписать цикл еще двумя способами*/
 
-const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
+// const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели', '');
 
-const personalMovieDB = {
-	count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	privat: false
+// const personalMovieDB = {
+// 	count: numberOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: false
 
-};
+// };
 
-for (let i = 0; i < 2; i++) {
-	const a = prompt('Один из последних просмотренных фильмов?', ''),
-		b = prompt('На сколько оцените его?', '');
+// for (let i = 0; i < 2; i++) {
+// 	const a = prompt('Один из последних просмотренных фильмов?', ''),
+// 		b = prompt('На сколько оцените его?', '');
 
-	if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-		personalMovieDB.movies[a] = b;
-		console.log('done');
-	} else {
-		console.log('error');
-		i--;
-	}
+// 	if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+// 		personalMovieDB.movies[a] = b;
+// 		console.log('done');
+// 	} else {
+// 		console.log('error');
+// 		i--;
+// 	}
+// }
+
+// if (personalMovieDB.count <= 10) {
+// 	console.log('мало фильмов');
+// }
+// else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
+// 	console.log('Вы классический зритель');
+// } else if (personalMovieDB >= 30) {
+// 	console.log('Вы киноман');
+// } else {
+// 	console.log('Произошла ошибка');
+// }
+
+// console.log(personalMovieDB);
+
+// const ege = +prompt('Сколько Вам лет?', '');
+// if (ege < 18) {
+// 	console.log('Нельзя продавать');
+// } else if (ege >= 18 && ege <= 20) {
+// 	console.log("Можно продавать");
+// } else if (ege >= 21) {
+// 	console.log("Можно водку");
+// }
+
+// console.log(ege);
+
+// объявление функции
+// function showFirstMessage(text) {
+// 	console.log(text);
+// }
+// showFirstMessage('Hello word');
+// function calc(a, b) {
+// 	return (a + b);
+// }
+
+// return возвращает во внешний мир и  окончание функции
+
+// console.log(calc(4, 3));
+// console.log(calc(7, 9));
+// console.log(calc(8, 3));
+
+// глобальна переменная
+let num = 20;
+function showFirstMessage(text) {
+  console.log(text);
+  // локальная переменная
+  num = 20;
+  console.log(num);
 }
 
-if (personalMovieDB.count <= 10) {
-	console.log('мало фильмов');
-}
-else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-	console.log('Вы классический зритель');
-} else if (personalMovieDB >= 30) {
-	console.log('Вы киноман');
-} else {
-	console.log('Произошла ошибка');
+showFirstMessage();
+console.log(num);
+
+// const calc = (a, b) => {return a + b }; не имеет
+//  выражения функции объекты
+// все сущности объекты
+// объект это набор свойст "имя значение"
+{
+  visible: true;
 }
 
-console.log(personalMovieDB);
+// массив обэект
+// функция обеек
+// тчисло обеект
+// строка ичисло ведут сеьбя как объект
 
+// console.log(''); // метод объекта log в скобках аргумент другие dir table
+
+// console.log(' имя');
+
+function a() {
+  console.log('Hey there');
+}
+a();
+
+a = 10;
+a(); // ошибка функция переопределена TypeError: a is not a function
